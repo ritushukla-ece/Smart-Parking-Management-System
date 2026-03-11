@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Smart Parking System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>Smart Parking System</h1>
+
+<button onclick="toggleDark()">🌙 Dark Mode</button>
+
+<h3>Total Slots: 20</h3>
+<h3>Available Slots: <span id="count">20</span></h3>
+<h3>Booked Slots: <span id="booked">0</span></h3>
+
+<h3>Total Earnings: ₹ <span id="earnings">0</span></h3>
+
+<h2>Search Vehicle</h2>
+
+<input type="text" id="searchCar" placeholder="Enter Vehicle Number">
+
+<button onclick="searchCar()">Search</button>
+
+<p id="result"></p>
+
+<h2>Auto Slot Suggestion</h2>
+
+<button onclick="suggestSlot()">Find Best Slot</button>
+
+<p id="suggest"></p>
+
+<div class="parking-layout">
+
+    <div class="parking-left" id="leftSlots"></div>
+
+    <div class="road"></div>
+
+    <div class="parking-right" id="rightSlots"></div>
+
+</div>
+
+<h2>Parking Analytics</h2>
+
+<canvas id="parkingChart"></canvas>
+
+<h2>Parking History</h2>
+
+<table id="historyTable">
+
+    <tr>
+
+        <th>Slot</th>
+        <th>Vehicle</th>
+        <th>Entry Time</th>
+        <th>Exit Time</th>
+        <th>Fee</th>
+
+    </tr>
+
+</table>
+
+<button onclick="resetParking()">Reset Parking</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
