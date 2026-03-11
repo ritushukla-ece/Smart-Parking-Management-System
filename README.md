@@ -33,4 +33,4 @@ SmartParkingSystem
 - script.js  
 
 ## Author
-Ayush Shukla
+Ritu Shukla
